@@ -1,0 +1,23 @@
+* {
+    border: 1px solid gree;
+}
+
+
+  
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        img {
+            height: 40vh;
+
+        }
+    }
