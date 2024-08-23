@@ -1,17 +1,84 @@
-.tufo {
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+    background-color: rgb(207, 207, 207);
+
+}
+
+.mamae {
     display: flex;
     justify-content: center;
-    
-    .carlos {
-        background-color: rgb(210, 212, 214);
-        padding-top: 5vh;
+    align-items: center;
+    height: 100vh; /* Certifica que o container ocupa a tela toda */
+}
+
+.tufo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.select {
+    display: flex;
+
+    padding-top: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 100%;
+
+    input {
+        border-radius: 2vh;
+        height: 4vh;
+        width: 40vh;
+        border: none;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        transition: 1s;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            transition: 1s;
+            
+        }
+    }
+
+    .botoes {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid rgb(250, 250, 250);
-        height: 80vh;
-        width: 60vh;
-        border-radius: 5vh;
+        gap: 10vh;
+        
+
+        button {
+            border-radius: 2vh;
+            height: 5vh;
+            width: 15vh;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition: 1s;
+            &:hover {
+                transition: 1s;
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+        }
     }
 }
+
+
+

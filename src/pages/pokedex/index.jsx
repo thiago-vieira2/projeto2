@@ -14,15 +14,25 @@ export default function Poke() {
         let pokemonData = {
             name: datas.name,
             height: datas.height,
-            image: datas.sprites.front_default
+            image: datas.sprites.front_default,
+            types: datas.types.map(typeInfo => typeInfo.type.name),
+            abilities: datas.abilities.map(abilityInfo => abilityInfo.ability.name),
+         
+            
         };
 
 
         setName([...name, pokemonData]);
     }
 
+    
+
+
+   
+
     const limpar = () => {
         setName([])
+        setPika ('')
     }
 
     return (
@@ -30,10 +40,14 @@ export default function Poke() {
             <div className="tufo">
                 <section>
 
-
+                    <div className="select">
                     <input type="text" value={pika} onChange={e => setPika(e.target.value)} />
+                    <div className="botoes">
                     <button onClick={buscar}>Buscar</button>
                     <button onClick={limpar}>limpar</button>
+          
+                    </div>
+                    </div>
 
                     <div className="carlos">
 
