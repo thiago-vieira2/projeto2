@@ -8,14 +8,14 @@ export default function Cartao(props) {
             </div>
 
             <div className="info">
-                <ul>
-                <li><h2>{props.item.name}</h2></li>
-                <li><h2>{props.item.height}cm</h2></li>
-                <li><h2>{props.item.types}</h2></li>
+          
+                <h2>{props.item.name}</h2>
+                <h2>{props.item.height}cm</h2>
+                <h2>{props.item.types}</h2>
           
               
              
-                </ul>
+               
             </div>
         </div>
 

@@ -25,6 +25,11 @@ export default function Poke() {
         setName([...name, pokemonData]);
     }
 
+    const apagar = (index) => {
+        const nova = name.filter ((_,i) => i !== index)
+        setName(nova)
+    }
+
     
 
 
@@ -41,9 +46,9 @@ export default function Poke() {
                 <section>
 
                     <div className="select">
-                    <input type="text" value={pika} onChange={e => setPika(e.target.value)} />
+                    <input type="text" value={pika} placeholder="digite o numero ou nome do pokemon" onChange={e => setPika(e.target.value)} />
                     <div className="botoes">
-                    <button onClick={buscar}>Buscar</button>
+                    <button className="buscar" onClick={buscar}>Buscar</button>
                     <button onClick={limpar}>limpar</button>
           
                     </div>
@@ -52,8 +57,12 @@ export default function Poke() {
                     <div className="carlos">
 
                         <div className="calros">
-                            {name.map(item =>
+                            {name.map((item,index) =>
+
+                            <div className="ler">
                                 <Cartao item={item} />
+                                <button onClick={() => apagar(index)}>limpar</button>
+                                </div>
                             )}
 
                         </div>

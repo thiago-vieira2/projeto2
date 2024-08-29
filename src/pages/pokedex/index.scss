@@ -1,84 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
-
-.matemasie-regular {
-    font-family: "Matemasie", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman';
-    background-color: rgb(207, 207, 207);
-
-}
+$radius: 1vh;
+$primary-color: #4CAF50;
+$secondary-color: #f9f9f9;
+$text-color: #333;
+$border-radius: 8px;
+$box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
 .mamae {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Certifica que o container ocupa a tela toda */
+    min-height: 100vh;
 }
 
-.tufo {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+
+.tufo{
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100%;
+    max-width: 600px;
+    border-radius: $radius;
 }
 
 .select {
     display: flex;
-
-    padding-top: 5vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    width: 100%;
+    margin-bottom: 20px;
+
 
     input {
-        border-radius: 2vh;
-        height: 4vh;
-        width: 40vh;
-        border: none;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-        transition: 1s;
+        border: 1px solid rgb(63, 49, 255);
+        border-radius: $radius;
 
-        &:hover {
-            background-color: black;
-            color: white;
-            transition: 1s;
-            
-        }
+        height: 6vh;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+   
+
     }
 
-    .botoes {
-        display: flex;
-        gap: 10vh;
-        
 
-        button {
-            border-radius: 2vh;
-            height: 5vh;
-            width: 15vh;
-            border: none;
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        color: white;
+        background-color: rgb(63, 49, 255);
+        height: 6vh;
+        width: 15vh;
+        transition: 1s;
+
+        border-radius: $radius;
+        border: none;
+        
+        &:hover {
             transition: 1s;
+            background-color: rgb(15, 6, 139);
+        }
+
+
+        &:nth-child(2){
+            background-color: rgb(255, 48, 48);
+            transition: 1s;
+
             &:hover {
                 transition: 1s;
-                background-color: rgb(0, 0, 0);
-                color: white;
+                background-color: rgb(185, 5, 5);
             }
         }
     }
 }
 
+.carlos {
+    .calros {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
 
 
+        .ler {
+            button {
+                color: white;
+                background-color: rgb(255, 48, 48);
+                height: 6vh;
+                width: 15vh;
+                transition: 1s;
+        
+                border-radius: $radius;
+                border: none;
+
+                &:hover {
+                    transition: 1s;
+                    background-color: rgb(185, 5, 5);
+                }
+            }
+        }
+    }
+}
+
+.tudos {
+    background-color: #ebebeb;
+    box-shadow: 1px 2px 2px rgb(100, 100, 100);
+    text-align: center;
+    border-radius: $radius;
+    max-width: 250px;
+    padding: 15px;
+    transition: 1s;
+    max-width: 100%;
+    box-sizing: border-box;
+
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .info {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+
+    }
+}

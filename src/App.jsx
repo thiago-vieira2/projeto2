@@ -7,7 +7,7 @@ import Rick from './pages/rick';
 function App() {
   return (
     <div>
-      <Rick/>
+      <Poke/>
     </div>
   );
 }
